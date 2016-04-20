@@ -11,11 +11,9 @@
 DHT22::DHT22(uint8_t pin) {
     Serial1.begin(115200);
     _pin = pin;
-    Serial1.println("DHT Initialized");
 }
 
 void DHT22::begin(void){
-    Serial1.println("Begin reading DHT sensor");
     readDHT22();
 }
 
